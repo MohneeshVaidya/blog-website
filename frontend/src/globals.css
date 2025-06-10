@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@layer base {
+    body {
+        @apply text-gray-800;
+    }
+
+    img {
+        @apply aspect-square w-full object-cover block;
+    }
+
+    a {
+        @apply hover:cursor-pointer transition;
+    }
+}
+
+@utility btn {
+    @apply inline-flex items-center gap-x-2 border border-solid border-transparent rounded-lg p-[0.5rem_1rem];
+}
+
+@utility btn-primary {
+    @apply btn border-teal-600 bg-teal-600 text-white hover:border-teal-500 hover:bg-teal-500;
+}
+
+@utility btn-primary-outline {
+    @apply btn-primary bg-white text-teal-600 border-1 hover:text-white;
+}
+
+@utility heading-primary {
+    @apply font-bold text-4xl;
+}
+
+@utility text-primary {
+    @apply text-gray-500 text-[0.96rem] leading-8;
+}
