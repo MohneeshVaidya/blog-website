@@ -13,10 +13,7 @@ export default function NavLinks() {
                 {navlinks.map(function ({ id, text, link }) {
                     return (
                         <li key={id}>
-                            <NavLink
-                                to={link}
-                                className="text-[1rem] text-gray-600 font-bold group py-4 tracking-wide"
-                            >
+                            <NavLink to={link} className="link group py-4">
                                 <span className="inline-block group-hover:scale-110">
                                     {text}
                                 </span>

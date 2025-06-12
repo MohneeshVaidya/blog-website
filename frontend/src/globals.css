@@ -27,9 +27,13 @@
 }
 
 @utility heading-primary {
-    @apply font-bold text-4xl;
+    @apply font-bold text-4xl capitalize;
 }
 
 @utility text-primary {
     @apply text-gray-500 text-[0.96rem] leading-8;
+}
+
+@utility link {
+    @apply text-[1rem] text-gray-600 tracking-wide font-bold hover:scale-110;
 }
